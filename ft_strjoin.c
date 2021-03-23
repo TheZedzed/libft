@@ -46,7 +46,9 @@ char		*ft_strjoin(char const *s1, char const *s2)
 	res = ft_calloc(len + 1, sizeof(char));
 	if (!res)
 		return (NULL);
-	ft_strcat(res, s1);
-	ft_strcat(res, s2);
+	if (s1)
+		ft_strcat(res, s1);
+	if (s2)
+		ft_strcat(res, s2);
 	return (res);
 }
