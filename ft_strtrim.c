@@ -6,13 +6,13 @@
 /*   By: azeraoul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/19 14:03:10 by azeraoul          #+#    #+#             */
-/*   Updated: 2021/03/22 21:00:55 by azeraoul         ###   ########.fr       */
+/*   Updated: 2021/04/16 13:32:35 by azeraoul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int		is_in(char c, char const *set)
+static int	is_in(char c, char const *set)
 {
 	while (*set)
 		if (*set++ == c)
@@ -42,7 +42,7 @@ static size_t	trimmed_str(char const *s1, char const *set)
 	return (len);
 }
 
-char			*ft_ncpy(char *dest, char const *s1, size_t n)
+char	*ft_ncpy(char *dest, char const *s1, size_t n)
 {
 	size_t		i;
 
@@ -55,7 +55,7 @@ char			*ft_ncpy(char *dest, char const *s1, size_t n)
 	return (dest);
 }
 
-char			*ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
 	char		*res;
 	size_t		len;

@@ -6,13 +6,13 @@
 /*   By: azeraoul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/18 16:18:51 by azeraoul          #+#    #+#             */
-/*   Updated: 2021/01/18 17:04:34 by azeraoul         ###   ########.fr       */
+/*   Updated: 2021/04/16 13:37:45 by azeraoul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char		*ft_strdup(const char *s)
+char	*ft_strdup(const char *s)
 {
 	char	*new;
 	size_t	size;

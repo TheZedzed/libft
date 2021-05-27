@@ -6,7 +6,7 @@
 /*   By: azeraoul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/18 16:37:09 by azeraoul          #+#    #+#             */
-/*   Updated: 2021/03/22 20:56:48 by azeraoul         ###   ########.fr       */
+/*   Updated: 2021/04/16 13:35:11 by azeraoul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ static int	alloc_sub(size_t s_len, size_t len, char **res)
 	return (1);
 }
 
-char		*ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	unsigned int	i;
 	char			*res;

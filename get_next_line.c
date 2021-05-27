@@ -6,7 +6,7 @@
 /*   By: azeraoul <azeraoul@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/20 01:07:37 by azeraoul          #+#    #+#             */
-/*   Updated: 2021/03/23 10:09:43 by azeraoul         ###   ########.fr       */
+/*   Updated: 2021/04/16 13:38:25 by azeraoul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ static int	split_line(char **line, char **content)
 	return (1);
 }
 
-int			get_next_line(int fd, char **line)
+int	get_next_line(int fd, char **line)
 {
 	static char	*content[256];
 	char		*buff;
@@ -66,9 +66,12 @@ int			get_next_line(int fd, char **line)
 	while (!new_line(content[fd]) && rlen > 0)
 	{
 		rlen = read(fd, buff, BUFFER_SIZE);
-		buff[rlen] = 0;
 		tmp = content[fd];
-		content[fd] = ft_strjoin(content[fd], buff);
+		if (rlen != -1)
+		{
+			buff[rlen] = 0;
+			content[fd] = ft_strjoin(content[fd], buff);
+		}
 		free(tmp);
 	}
 	free(buff);

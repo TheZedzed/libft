@@ -6,11 +6,25 @@
 /*   By: azeraoul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/18 16:16:29 by azeraoul          #+#    #+#             */
-/*   Updated: 2021/03/22 20:51:23 by azeraoul         ###   ########.fr       */
+/*   Updated: 2021/05/11 22:22:07 by azeraoul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static char	**free_all(char **tab)
+{
+	int	i;
+
+	i = 0;
+	while (tab[i])
+	{
+		free(tab[i]);
+		++i;
+	}
+	free(tab);
+	return (NULL);
+}
 
 static int	ft_nb_words(const char *str, char c)
 {
@@ -51,7 +65,7 @@ static char	*word(const char *str, char c)
 	return (res);
 }
 
-char		**ft_split(const char *s, char c)
+char	**ft_split(const char *s, char c)
 {
 	char	**tab;
 	int		nb_words;
@@ -69,6 +83,8 @@ char		**ft_split(const char *s, char c)
 		if (*s && *s != c)
 		{
 			tab[i] = word(s, c);
+			if (!tab[i])
+				return (free_all(tab));
 			while (*s && *s != c)
 				++s;
 			++i;

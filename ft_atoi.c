@@ -6,7 +6,7 @@
 /*   By: azeraoul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/18 15:17:57 by azeraoul          #+#    #+#             */
-/*   Updated: 2021/01/20 10:48:43 by azeraoul         ###   ########.fr       */
+/*   Updated: 2021/04/16 13:34:36 by azeraoul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ static int	big_num(int len, int nb, int neg, const char *str)
 	return (-nb);
 }
 
-int			ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
 	int		i;
 	int		nb;

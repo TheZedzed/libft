@@ -6,7 +6,7 @@
 /*   By: azeraoul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/18 16:19:32 by azeraoul          #+#    #+#             */
-/*   Updated: 2021/01/31 23:33:28 by azeraoul         ###   ########.fr       */
+/*   Updated: 2021/04/16 13:29:42 by azeraoul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ static char	*ft_strcat(char *dest, char const *src)
 	return (dest);
 }
 
-char		*ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*res;
 	size_t	len;

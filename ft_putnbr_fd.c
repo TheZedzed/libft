@@ -6,13 +6,13 @@
 /*   By: azeraoul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/18 16:15:21 by azeraoul          #+#    #+#             */
-/*   Updated: 2021/01/18 16:15:56 by azeraoul         ###   ########.fr       */
+/*   Updated: 2021/04/16 13:31:17 by azeraoul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void		ft_putnbr_fd(int n, int fd)
+void	ft_putnbr_fd(int n, int fd)
 {
 	int		sign;
 	char	c;

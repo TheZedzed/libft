@@ -6,7 +6,7 @@
 /*   By: azeraoul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/18 15:53:56 by azeraoul          #+#    #+#             */
-/*   Updated: 2021/03/22 21:11:14 by azeraoul         ###   ########.fr       */
+/*   Updated: 2021/04/23 11:34:35 by azeraoul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,16 +19,15 @@ static int	nbrlen(int nbr)
 	len = 1;
 	if (nbr < 0)
 		++len;
-	while (nbr)
+	while (nbr >= 10)
 	{
 		nbr /= 10;
-		if (nbr)
-			++len;
+		++len;
 	}
 	return (len);
 }
 
-char		*ft_itoa(int n)
+char	*ft_itoa(int n)
 {
 	char	*num;
 	int		len;

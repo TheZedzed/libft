@@ -6,13 +6,13 @@
 /*   By: azeraoul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/18 16:36:07 by azeraoul          #+#    #+#             */
-/*   Updated: 2021/01/18 16:36:53 by azeraoul         ###   ########.fr       */
+/*   Updated: 2021/04/16 13:37:07 by azeraoul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char		*ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
 	char	*ptr;
 	char	*res;
