@@ -29,7 +29,7 @@ SRCS 	:=	$(addsuffix .c, bsd/ft_strlcpy bsd/ft_strlcat \
 			btree/ft_apply_level btree/ft_level_count btree/ft_create_node \
 			btree/ft_apply_suffix btree/ft_apply_infix btree/ft_apply_prefix \
 			utils/get_next_line utils/ft_itoa utils/ft_split utils/ft_strjoin \
-			utils/ft_strtrim utils/ft_substr)
+			utils/ft_strtrim utils/ft_substr utils/ft_atoi_base)
 OBJS 	:=	$(SRCS:.c=.o)
 RM		:=	rm -f
 AR		:=	ar -rcs
