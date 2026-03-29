@@ -82,7 +82,7 @@ void	ft_putnbr_fd(int n, int fd);
 size_t	ft_strlen(const char *s);
 char	*ft_strdup(const char *s);
 void	ft_bzero(void *s, size_t n);
-int		ft_strcmp(char *s1, char *s2);
+int		ft_strcmp(const char *s1, const char *s2);
 char	*ft_strchr(const char *s, int c);
 void	*ft_memset(void *s, int c, size_t len);
 char	*ft_strcat(char *dst, const char *src);
